@@ -5,9 +5,8 @@
 }
 
 @font-face {
-    font-family: "Roboto";
+    font-family: "Roboto Bold";
     src: url(fonts/Roboto-Bold.ttf) format('truetype');
-    font-weight: bolder;
 }
 
 @font-face {
@@ -22,77 +21,88 @@
 }
 
 
-/* HEADER */
+/* HTML AND BODY */
 
-header {
-    background-color: #1F2937;
-    display: flex;
-    flex-direction: column;
+html {
+    font-size: 100%;
 }
 
 body {
     margin: auto;
 }
 
+
+/* HEADER */
+
+header {
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* header top part */
 
 #header-top {
+    width: 60%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 h3 {
     font-family: "Roboto", sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #F9FAF8;
-    margin-right: 17%;
-    
 }
 
-ul {
-    margin-left: 4%;
+
+nav ul {
+    margin: 0;
+    padding: 0;
 }
 
-li {
-    font-size: 18px;
+nav li {
+    font-size: 1.125rem;
     color: #e5e7eb;
     float: left;
     list-style: none;
-    margin-left: 1vw;
+    margin-left: 1rem;
     font-family: "Roboto Light", sans-serif;
 }
 
-li:hover {
+nav li:hover {
     border-bottom: 1px solid #e5e7eb;
 }
 
 /* header main part */
 
 #header-main {
+    width: 60%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 #header-main h1 {
     font-family: "Roboto", sans-serif;
-    font-size: 48px;
+    font-size: 3rem;
     color: #F9FAF8;
     margin: 0;
 }
 
 #header-main p {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #e5e7eb;
     margin-top: 0;
     width: 90%;
 }
 
 #header-main div, #header-main img {
-    width: 450px;
-    height: 225px;
-    margin: 3% 0 5% 2%;
+    width: 28rem;
+    height: 14rem;
+    margin-top: 5vh;
+    margin-bottom: 15vh;
 }
 
 #header-button {
@@ -100,10 +110,9 @@ li:hover {
     border: 0;
     color: white;
     padding: 5px;
-    width: 110px;
+    width: 6.8rem;
     border-radius: 5px;
-    font-weight: bold;
-    font-family: "Roboto Light", sans-serif;
+    font-family: "Roboto Bold", sans-serif;
 }
 
 #header-button:hover {
@@ -122,27 +131,32 @@ li:hover {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: bolder;
     color: #1f2937;
     font-family: "Roboto", sans-serif;
 }
 
-#picture-row { /* Images with captions overflow div container !!! */
-    width: 50%;
+#picture-row {
+    width: 50vw;
     display: flex;
     justify-content: space-between;
 }
 
+#main-top figure {
+    margin: 0;
+}
+
 #main-top figcaption {
+    width: 10vw;
     font-family: "Roboto Light", sans-serif;
-    font-size: 15px;
+    font-size: 0.9rem;
     text-align: center;
 }
 
 #main-top img {
-    height: 150px;
-    width: 150px;
+    height: 10vw;
+    width: 10vw;
     border: 3px solid #3882f6;
     border-radius: 10px;
 }
@@ -159,14 +173,14 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 5% 0 5% 0;
-    padding: 5% 0;
+    margin: 10vh 0 10vh 0;
+    padding: 10vh 0;
 }
 
 #main-middle blockquote {
-    width: 45%;
+    width: 50vw;
     font-family: "Roboto Light Italic", cursive;
-    font-size: 36px;
+    font-size: 2.25rem;
     margin-bottom: 0;
     text-align: justify;
 }
@@ -174,16 +188,18 @@ h2 {
 #main-middle h4 {
     margin-top: 0;
     position: relative;
-    left: 21%;
+    left: 23vw;
+    font-family: "Roboto", sans-serif;
 }
 
 /* Third section */
 
 #main-bottom {
+    width: 60vw;
     background-color: #3882f6;
     color: #F9FAF8;
-    margin: 0 15% 5% 15%;
-    padding: 30px 0;
+    margin: 0 20vw;
+    padding: 5vh 0;
     border-radius: 5px;
     display: flex;
     justify-content: space-around;
@@ -191,7 +207,7 @@ h2 {
 }
 
 #main-bottom h4 {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin: 0 auto;
     font-family: "Roboto", sans-serif;
     font-weight: normal;
@@ -199,7 +215,7 @@ h2 {
 
 #main-bottom p {
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: "Roboto Light",sans-serif;
 }
 
@@ -229,14 +245,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10vh;
 }
 
 footer h5 {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: "Roboto Light", sans-serif;
 }
 
-/*  1. Organize CSS into sections and separate what selectors do what
-    2. Add Semantics to HTML (figure/figcaption, quote etc)
-    3. Make all margins/paddings use proper values (you know what that means)
-    4. Add additional pages ??? */
