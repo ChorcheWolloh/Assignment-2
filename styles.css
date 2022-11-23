@@ -134,6 +134,12 @@ h2 {
     border-radius: 10px;
 }
 
+#main-top figcaption {
+    font-family: "Roboto Light", sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
 #main-top img:hover {
     border: 4px solid #2b64bd;
 }
@@ -222,3 +228,8 @@ footer h5 {
     font-size: 18px;
     font-family: "Roboto Light", sans-serif;
 }
+
+/*  1. Organize CSS into sections and separate what selectors do what
+    2. Add Semantics to HTML (figure/figcaption, quote etc)
+    3. Make all margins/paddings use proper values (you know what that means)
+    4. Add additional pages ??? */
