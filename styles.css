@@ -469,7 +469,7 @@ footer h5 {
   #rocket-ship {
     position: absolute;
     left: 300px;
-    bottom: 270px;
+    bottom: 300px;
     height: 400px;
     width: 200px;
     transform: rotate(90deg);
